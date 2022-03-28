@@ -1,0 +1,6 @@
+.idea
+dist
+output
+output/EO_Versions.zip
+main.spec
+__pycache__
