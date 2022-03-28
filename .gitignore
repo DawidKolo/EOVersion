@@ -4,3 +4,4 @@ output
 output/EO_Versions.zip
 main.spec
 __pycache__
+test.py
