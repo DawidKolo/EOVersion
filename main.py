@@ -31,9 +31,8 @@ for n in prod:
 
     # select_box = driver.find_elements(by=By.XPATH, value="//select[@id='version']")
 
-    for i in range(len(select_box)):
-        for item in select_box:
-            x= item.get_attribute('value')
+    for item in select_box:
+        x= item.get_attribute('value')
         a.append(x)
 
 res = "\n".join("{} {}".format(x, y) for x, y in zip(pr, a))
