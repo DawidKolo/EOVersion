@@ -4,14 +4,15 @@ from selenium.webdriver.common.by import By
 
 os.environ['PATH'] += r"'..\'"
 driver = webdriver.Chrome()
-print("**************************************************************")
+line = "**************************************************************"
+print(line)
 print("*                                                            *")
 print("*           This script has been created by                  *")
 print("*                   Dawid Kolodziej                          *")
 print("*     source code: https://github.com/DawidKolo/EOVersion    *")
 print("*       It is FREE to use by Precisely Support               *")
 print("*                                                            *")
-print("**************************************************************")
+print(line)
 
 url = "https://support.precisely.com/products/engageone"
 
