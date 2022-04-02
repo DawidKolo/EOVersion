@@ -1,5 +1,6 @@
 import os
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 os.environ['PATH'] += r"'..\'"
 driver = webdriver.Chrome()
@@ -31,9 +32,8 @@ pr = ["SERVER", "DELIVER", "GENERATE", "DESIGNER", "VAULT", "ENRICHMENT", "CONTE
 a = []
 for n in prod:
     driver.get(n)
-    select_box = driver.find_elements_by_xpath("//select[@id='version']")
 
-    # select_box = driver.find_elements(by=By.XPATH, value="//select[@id='version']")
+    select_box = driver.find_elements(by=By.XPATH, value="//select[@id='version']")
 
     for item in select_box:
         x= item.get_attribute('value')
