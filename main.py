@@ -12,22 +12,22 @@ print("*       It is FREE to use by Precisely Support               *")
 print("*                                                            *")
 print("**************************************************************")
 
-url = "https://support.precisely.com/products/"
+url = "https://support.precisely.com/products/engageone"
 
-server = url+'engageone-server/'
-deliver = url+'engageone-deliver/'
-generate = url+'engageone-generate/'
-designer = url+'engageone-designer/'
-vault = url+'engageone-vault/'
-enrichment = url+'engageone-enrichment/'
-CA = url+'engageone-content-author/'
-smartBill = url+'engageone-smart-bill/'
-PD = url+'portrait-dialogue/'
-InterAct = url+'engageone-interactive/'
+server = url+'-server/'
+deliver = url+'-deliver/'
+generate = url+'-generate/'
+designer = url+'-designer/'
+vault = url+'-vault/'
+enrichment = url+'-enrichment/'
+CA = url+'-content-author/'
+smartBill = url+'-smart-bill/'
+PD = 'https://support.precisely.com/products/portrait-dialogue/'
+InterAct = url+'-interactive/'
 
-prod = [server, deliver, generate, designer, vault, enrichment, CA, smartBill, PD, InterAct]
+prod = [server, deliver, generate, designer, vault, enrichment, CA, smartBill, InterAct, PD]
 pr = ["SERVER", "DELIVER", "GENERATE", "DESIGNER", "VAULT", "ENRICHMENT", "CONTENT-AUTHOR", "SMART-BILL",
-          "PORTRAIT-DIALOGUE", "Interactive"]
+           "INTERACTIVE", "PORTRAIT-DIALOGUE"]
 a = []
 for n in prod:
     driver.get(n)
@@ -41,7 +41,5 @@ for n in prod:
 
 res = "\n".join("{} {}".format(x, y) for x, y in zip(pr, a))
 print(res)
-
-
 
 driver.quit()
