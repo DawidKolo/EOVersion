@@ -21,9 +21,10 @@ enrichment = 'https://support.precisely.com/products/engageone-enrichment/'
 CA = 'https://support.precisely.com/products/engageone-content-author/'
 smartBill = 'https://support.precisely.com/products/engageone-smart-bill/'
 PD = 'https://support.precisely.com/products/portrait-dialogue/'
-prod = [server, deliver, generate, designer, vault, enrichment, CA, smartBill, PD]
+InterAct = 'https://support.precisely.com/products/engageone-interactive/'
+prod = [server, deliver, generate, designer, vault, enrichment, CA, smartBill, PD, InterAct]
 pr = ["SERVER", "DELIVER", "GENERATE", "DESIGNER", "VAULT", "ENRICHMENT", "CONTENT-AUTHOR", "SMART-BILL",
-          "PORTRAIT-DIALOGUE"]
+          "PORTRAIT-DIALOGUE", "Interactive"]
 a = []
 for n in prod:
     driver.get(n)
