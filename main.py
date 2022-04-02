@@ -5,13 +5,14 @@ from selenium.webdriver.common.by import By
 os.environ['PATH'] += r"'..\'"
 driver = webdriver.Chrome()
 line = "**************************************************************"
+space = "*                                                            *"
 print(line)
-print("*                                                            *")
+print(space)
 print("*           This script has been created by                  *")
 print("*                   Dawid Kolodziej                          *")
 print("*     source code: https://github.com/DawidKolo/EOVersion    *")
 print("*       It is FREE to use by Precisely Support               *")
-print("*                                                            *")
+print(space)
 print(line)
 
 url = "https://support.precisely.com/products/engageone"
