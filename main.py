@@ -12,16 +12,19 @@ print("*       It is FREE to use by Precisely Support               *")
 print("*                                                            *")
 print("**************************************************************")
 
-server = 'https://support.precisely.com/products/engageone-server/'
-deliver = 'https://support.precisely.com/products/engageone-deliver/'
-generate = 'https://support.precisely.com/products/engageone-generate/'
-designer = 'https://support.precisely.com/products/engageone-designer/'
-vault = 'https://support.precisely.com/products/engageone-vault/'
-enrichment = 'https://support.precisely.com/products/engageone-enrichment/'
-CA = 'https://support.precisely.com/products/engageone-content-author/'
-smartBill = 'https://support.precisely.com/products/engageone-smart-bill/'
-PD = 'https://support.precisely.com/products/portrait-dialogue/'
-InterAct = 'https://support.precisely.com/products/engageone-interactive/'
+url = "https://support.precisely.com/products/"
+
+server = url+'engageone-server/'
+deliver = url+'engageone-deliver/'
+generate = url+'engageone-generate/'
+designer = url+'engageone-designer/'
+vault = url+'engageone-vault/'
+enrichment = url+'engageone-enrichment/'
+CA = url+'engageone-content-author/'
+smartBill = url+'engageone-smart-bill/'
+PD = url+'portrait-dialogue/'
+InterAct = url+'engageone-interactive/'
+
 prod = [server, deliver, generate, designer, vault, enrichment, CA, smartBill, PD, InterAct]
 pr = ["SERVER", "DELIVER", "GENERATE", "DESIGNER", "VAULT", "ENRICHMENT", "CONTENT-AUTHOR", "SMART-BILL",
           "PORTRAIT-DIALOGUE", "Interactive"]
